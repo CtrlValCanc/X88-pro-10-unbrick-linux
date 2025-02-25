@@ -14,8 +14,8 @@ Using Multitool I converted this Android box to a Linux box, but sometimes thing
 
 Here you have two alternatives, both equivalent:
 1. FactoryTool (Windows Only)
-2. AndroidTool (Windows and Linux, maybe MacOS)
-   I will provide files only for Windows as I tried them both on the same Windows OS installation, but you should be able to find them on Google
+2. AndroidTool (Windows and Linux, maybe MacOS).  
+I will provide files only for Windows as I tried them both on the same Windows OS installation, but you should be able to find them on Google
 ## Preparing your pc
 Download Driver Assistant, extract the archieve and run the exe; click "Install" and wait for it to finish. Reboot your pc.
 Download FactoryTool or AndroidTool, extract the archieve and run the exe. 
