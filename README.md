@@ -1,10 +1,10 @@
-# X88-pro-10-unbrick
+# X88-pro-10-unbrick-linux-armbian
 
-### My guide to unbrick X88 pro 10 through mask mode
+### My guide to unbrick X88 pro 10 with Linux (armbian) installed through mask mode
 
 ---
 
-Using Multitool I converted this Android box to a Linux box, but sometimes things do not go as we want. I had to reinstall Linux various time, and not all the flash were successful. I googled and find the information I needed, but they are scattered, so I thought I could write a guide to have it all together.
+Using Multitool I converted this Android box to a Linux box, but sometimes things do not go as we want. I had to reinstall Linux various time, and not all the flash were successful. I googled and find the information I needed, but they are scattered, so I thought I could write a guide.
 
 #### What do you need?
 
@@ -15,7 +15,7 @@ Using Multitool I converted this Android box to a Linux box, but sometimes thing
 Here you have two alternatives, both equivalent:
 1. FactoryTool (Windows Only)
 2. AndroidTool (Windows and Linux, maybe MacOS)
-		notice I will provide files only for Windows as I tried them both on the same OS, but you should be able to find them on Google
+   I will provide files only for Windows as I tried them both on the same Windows OS installation, but you should be able to find them on Google
 ## Preparing your pc
 Download Driver Assistant, extract the archieve and run the exe; click "Install" and wait for it to finish. Reboot your pc.
 Download FactoryTool or AndroidTool, extract the archieve and run the exe. 
