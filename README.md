@@ -22,7 +22,6 @@ Download FactoryTool or AndroidTool, extract the archieve and run the exe.
 + FactoryTool relative path: /FactoryTool_1.66/FactoryTool.exe
 + AndroidTool relative path: /AndroidTool/AndroidTool_Release/AndroidTool.exe
 
-##Connect USB A into your 2.0 USB box and your pc
 
 ## Enter Mask Mode
 Mask Mode is, if I understand right, similiar to a computer BIOS.
@@ -30,7 +29,8 @@ Mask Mode is, if I understand right, similiar to a computer BIOS.
 I found this image on Armbian forum.
 ![IMG-20230105-202824](https://github.com/CtrlValCanc/X88-pro-10-unbrick/assets/85836574/115b83b4-10ed-4079-8b70-41a61e8b079a)
 You need to make contact between this (yellow and blue) two pins (I personally used some tweezers).
-While keeping doing contact, we put the DC cable so the device turns on. 
+While keeping doing contact, we put the USB cable so the device turns on. 
+#### Interesting enough, I found by some YouTube video that, instead of shorting, you can try to insert a toothpick into AUX plug (you should hear a "click")
 You then should be hearing the classic Windows "plugged in" noise. 
 Check your software to see if it's connected.
 + In Factory Tool, you should see under "Device Type" _MaskRom_ or something similiar. Everything that's not Hub should be right.
