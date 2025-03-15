@@ -22,6 +22,8 @@ Download FactoryTool or AndroidTool, extract the archieve and run the exe.
 + FactoryTool relative path: /FactoryTool_1.66/FactoryTool.exe
 + AndroidTool relative path: /AndroidTool/AndroidTool_Release/AndroidTool.exe
 
+##Connect USB A into your 2.0 USB box and your pc
+
 ## Enter Mask Mode
 Mask Mode is, if I understand right, similiar to a computer BIOS.
 ### How do we enter?
