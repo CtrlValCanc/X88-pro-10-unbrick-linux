@@ -3,58 +3,70 @@
 ### My guide to unbrick X88 pro 10 with Linux (armbian) installed through mask mode
 
 ---
+This guide explains how to unbrick or reinstall Linux (Armbian) on the X88 Pro 10 TV box using Mask Mode.
 
-Using Multitool I converted this Android box to a Linux box, but sometimes things do not go as we want. I had to reinstall Linux various time, and not all the flash were successful. I googled and find the information I needed, but they are scattered, so I thought I could write a guide.
+I had to reinstall Linux several times on this device, and since the information I found online was scattered, I decided to write a complete step-by-step guide.
 
 #### What do you need?
 
 + Driver Assistant
-+ USB A to USB A data cable, probably better if USB 2.0 
++ USB A to USB A data cable, better if USB 2.0 
 + Firmware file
 
-Here you have two alternatives, both equivalent:
-1. FactoryTool (Windows Only)
-2. AndroidTool (Windows and Linux, maybe MacOS).  
-I will provide files only for Windows as I tried them both on the same Windows OS installation, but you should be able to find them on Google
+You can use one of two equivalent flashing tools::
++ FactoryTool (Windows Only)
++ AndroidTool (Windows and Linux, possibly MacOS).  
+In this guide, I’ll focus on Windows, but you can easily find the Linux equivalents online.
+
 ## Preparing your pc
-Download Driver Assistant, extract the archieve and run the exe; click "Install" and wait for it to finish. Reboot your pc.
-Download FactoryTool or AndroidTool, extract the archieve and run the exe. 
-+ FactoryTool relative path: /FactoryTool_1.66/FactoryTool.exe
-+ AndroidTool relative path: /AndroidTool/AndroidTool_Release/AndroidTool.exe
+Download Driver Assistant
+1. Extract the archive and run the .exe file
+2. Click Install and wait for it to finish
+3. Reboot your PC
+
+Download FactoryTool or AndroidTool
+1. Extract the archieve and run the exe.
+2. FactoryTool relative path: /FactoryTool_1.66/FactoryTool.exe
+3. AndroidTool relative path: /AndroidTool/AndroidTool_Release/AndroidTool.exe
 
 
 ## Enter Mask Mode
-Mask Mode is, if I understand right, similiar to a computer BIOS.
-### How do we enter?
+Mask Mode is similar to a computer’s BIOS: it allows you to communicate with the device even if the system won’t boot.
+
+### How to enter Mask Mode
 I found this image on Armbian forum.
 ![IMG-20230105-202824](https://github.com/CtrlValCanc/X88-pro-10-unbrick/assets/85836574/115b83b4-10ed-4079-8b70-41a61e8b079a)
-You need to make contact between this (yellow and blue) two pins (I personally used some tweezers).
-While keeping doing contact, we put the USB cable so the device turns on. 
-#### Interesting enough, I found by some YouTube video that, instead of shorting, you can try to insert a toothpick into AUX plug (you should hear a "click")
-You then should be hearing the classic Windows "plugged in" noise. 
+1. Locate the two pins shown in the picture (yellow and blue).
+2. Use a metal tweezer or small wire to short the two pins.
+3. While keeping them shorted, connect the USB cable to power on the device.
+
+#### Alternatively, some users report that inserting a toothpick into the AUX port (until you hear a “click”) can also trigger Mask Mode.
+
+Once connected, your computer should play the usual “device plugged in” sound.
 Check your software to see if it's connected.
 + In Factory Tool, you should see under "Device Type" _MaskRom_ or something similiar. Everything that's not Hub should be right.
 + In Android Tool, you should see "Found One MASKROM Device".
 
 ## Factory Tool
 
-+ Open FactoryTool.exe
-+ At the top left, you see "Firmware". Click it and navigate to your firmware image (X88pro_B_rk3318_d4_11.0_SP6330_20210125_r1(X88pro10 1.0.1).img).
-+ Check Restore (and not upgrade).
-+ Choose your MaskRom device and press "Run"
-It should take some time and then you should be greeted with a green "Success".
-Notice: it might fail because it waits for a MaskRom device. While the program is going, check if it waits for a MaskRom device. If yes, you can redo the steps in _Enter Mask Mode_ and see if it works.
+1. Open FactoryTool.exe
+2. At the top left, you see "Firmware". Click it and navigate to your firmware image (X88pro_B_rk3318_d4_11.0_SP6330_20210125_r1(X88pro10 1.0.1).img).
+3. Check Restore (and not upgrade).
+4. Choose your MaskRom device and press "Run"
+5. Wait for the process to complete: you should be greeted with a green "Success".
+   
+Notice: it might fail because it waits for a MaskRom device. While the program is running, check if it waits for a MaskRom device. If yes, you can redo the steps in _Enter Mask Mode_ and see if it works.
 
 ## Android Tool
 
-+ Choose "Upgrade Firmware" tab
-+ Navigate to your firmware image (X88pro_B_rk3318_d4_11.0_SP6330_20210125_r1(X88pro10 1.0.1).img).
-+ Choose Switch (!!NOT SURE ABOUT IT!!) or Upgrade
-+ Wait for it to end.
+1. Choose "Upgrade Firmware" tab
+2. Navigate to your firmware image (X88pro_B_rk3318_d4_11.0_SP6330_20210125_r1(X88pro10 1.0.1).img).
+3. Choose Switch (!!NOT SURE ABOUT IT!!) or Upgrade
+4. Wait for it to end.
 
 
 Now the device should boot and show the purple-blue "X88 PRO 10" boot image.
 
-If not, try again.
+If it doesn’t boot correctly, simply repeat the process: sometimes it takes a couple of tries.
 
 
